@@ -1,5 +1,7 @@
 * {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 .nav-item,
@@ -69,4 +71,129 @@ button {
     display: flex;
     flex-flow: wrap;
     align-items: center;
+}
+
+.fourth-section, .fifth-section {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    justify-content: center;
+    width: 30.25rem;
+}
+
+.best-month {
+    font-size: 39.21px;
+    color: #242E53;
+}
+
+.info-lebron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6rem 1.2188rem 2.8rem; 
+    padding: 3rem 1.7188rem 1.7188rem;
+    background-color: #FAFAFA;
+    position: relative;
+}
+
+.img-lebron {
+    position: absolute;
+    top: -35px
+}
+
+.info-name {
+    color: #3F4868;
+    font-size: 16.07px;
+    padding: 0.5rem 0 1rem;
+}
+
+.info-description {
+    color: #B9B9C1;
+    text-align: center;
+}
+
+.info-sanyo, .info-navarro {
+    display: none;
+}
+
+.more-button {
+    width: 8.375rem;
+    margin-bottom: 1rem;
+}
+
+.fifth-section {
+    background-color: #3CDDF3;
+    padding: 2rem;
+    
+    & h2 {
+        color: #FFFFFF;
+        font-size: 40px;
+        /* font-weight: 700; */
+        text-align: center;
+        padding: 1rem 3rem;
+    }
+}
+
+.go-button {
+    background-color: #232C50;
+    color: #FFFFFF;
+    font-size: 13.18px; 
+    font-weight: 500;
+    width: 8.375rem;
+    height: 44px;
+    margin-top: 1.5rem;
+}
+
+.footer{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-buttons, .footer-nav, .footer-icons, .copyright {
+    width: 30.25rem;
+    background-color: #1E1E26;
+    padding: 1.5625rem 3.125rem;
+}
+
+.footer-buttons {
+    display: flex;
+}
+
+.update-button {
+    background-color: #FFFFFF;
+    color: #A0A0A0;
+    width: 19.25rem;
+    text-align: start;
+    padding-left: 0.625rem;
+    margin-right: 0.3125rem;
+}
+
+.footer-nav {
+    display: flex; 
+    justify-content: center;
+    column-gap: 9.375rem;
+    color: #FFFFFF;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-networks {
+    display: flex;
+    gap: 4.5rem;
+}
+
+.logo-footer {
+    padding-top: 3rem;
+}
+
+.copyright {
+    color: #8C8C94;
+    font-size: 12.5px;
+    text-align: center;
 }
