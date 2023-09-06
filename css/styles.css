@@ -67,11 +67,31 @@ button {
     }
 }
 
-.third-section1 , .third-section2, .third-section3 {
+ .third-section1 , .third-section2, .third-section3 {
     display: flex;
-    flex-flow: wrap;
     align-items: center;
+    flex-direction: column;
+    margin: 1rem 0 1rem 2rem;
+
+    & p {
+        font-size: 16.3px;
+        color:#B3B2B7;
+    }
+} 
+
+.container-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #8B48BF4D;
+    border-radius: 50px 0 0 50px;
+    margin-bottom: 1.5rem;
 }
+
+.third-section3 p {
+  display: block;
+}
+
 
 .fourth-section, .fifth-section {
     display: flex;
