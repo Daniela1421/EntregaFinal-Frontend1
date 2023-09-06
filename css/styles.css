@@ -76,6 +76,7 @@ button {
     & p {
         font-size: 16.3px;
         color:#B3B2B7;
+        margin-right: 1.5rem;
     }
 } 
 
