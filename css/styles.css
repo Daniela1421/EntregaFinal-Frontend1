@@ -300,6 +300,12 @@ button {
     .third-section {
         display: flex;
         background-color: #FAFAFA;
+        height: 26.75rem;
+
+        & .third-section2 {
+            align-self: end;
+        }
+
     }
 
     .container-title {
