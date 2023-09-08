@@ -242,6 +242,14 @@ button {
     .second-section {
         flex-direction: row;
         background-color: #8B48BF;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        & div {
+            display: flex;
+            width: 1090px;
+        }
     }
 
     .icon-hamburger {
@@ -274,7 +282,7 @@ button {
     /* Navbar */
 
     .nav-bar {
-
+        width: 1090px;
         margin: 2rem auto 3rem auto;
     }
     /* Intro */
@@ -282,6 +290,7 @@ button {
     .intro {
         display: flex;
         width: 1090px;
+        gap: 1.5rem;
 
         & .img-padel-intro {
             width: 540px;
