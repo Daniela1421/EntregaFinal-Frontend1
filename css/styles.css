@@ -1,3 +1,5 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Roboto:wght@100&display=swap');     */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Roboto:wght@100&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -106,21 +108,20 @@ button {
     flex-direction: column;
     flex-flow: wrap;
     justify-content: center;
-    width: 30.25rem;
 }
 
 .best-month {
-    font-size: 39.21px;
     color: #242E53;
+    font-size: 39.21px;
 }
 
 .info-lebron {
+    background-color: #FAFAFA;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     margin: 6rem 1.2188rem 2.8rem;
     padding: 3rem 1.7188rem 1.7188rem;
-    background-color: #FAFAFA;
     position: relative;
 }
 
@@ -146,8 +147,8 @@ button {
 }
 
 .more-button {
-    width: 8.375rem;
     margin-bottom: 1rem;
+    width: 8.375rem;
 }
 
 .fifth-section {
@@ -158,9 +159,14 @@ button {
         color: #FFFFFF;
         font-size: 40px;
         /* font-weight: 700; */
-        text-align: center;
         padding: 1rem 3rem;
+        text-align: center;
+
+        & .mobile-block {
+            display: block;
+        }
     }
+
 }
 
 .go-button {
@@ -168,25 +174,25 @@ button {
     color: #FFFFFF;
     font-size: 13.18px;
     font-weight: 500;
-    width: 8.375rem;
     height: 44px;
     margin-top: 1.5rem;
+    width: 8.375rem;
 }
 
 .footer {
-    font-family: 'Be Vietnam Pro', sans-serif;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 .footer-buttons,
 .footer-nav,
 .footer-icons,
 .copyright {
-    width: 30.25rem;
     background-color: #1E1E26;
     padding: 1.5625rem 3.125rem;
+    /* width: 30.25rem; */
 }
 
 .footer-buttons {
@@ -196,23 +202,23 @@ button {
 .update-button {
     background-color: #FFFFFF;
     color: #A0A0A0;
-    width: 19.25rem;
-    text-align: start;
-    padding-left: 0.625rem;
     margin-right: 0.3125rem;
+    padding-left: 0.625rem;
+    text-align: start;
+    width: 19.25rem;
 }
 
 .footer-nav {
-    display: flex;
-    justify-content: center;
-    column-gap: 9.375rem;
     color: #FFFFFF;
+    display: flex;
+    column-gap: 9.375rem;
+    justify-content: center;
 }
 
 .footer-icons {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
 }
 
 .social-networks {
@@ -312,4 +318,41 @@ button {
         background-color: #FAFAFA;
     }
 
+    .container-best {
+        display: flex;
+    }
+
+    
+    .info-sanyo,
+    .info-navarro, 
+    .info-lebron {
+        background-color: #FAFAFA;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0; 
+        padding: 3rem 1.7188rem 1rem;
+        /* position: relative; */
+    }
+
+    .info-lebron {
+        background-color: red;
+    } 
+
+    .img-lebron {
+        position: absolute;
+        top: 0px
+    }
+
+    .fifth-section {
+        background-color: #8B48BF;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        & h2 {
+           width: 50rem; 
+           background-color: red;
+        }
+    }
 }
