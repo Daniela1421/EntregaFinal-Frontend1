@@ -201,13 +201,23 @@ button {
     padding: 3rem 1rem 2rem;
 }
 
+form {
+    display: flex;
+}
+
 .update-button {
-    background-color: #FFFFFF;
-    color: #A0A0A0;
     margin-right: 0.5rem;
     padding-left: 0.625rem;
-    text-align: start;
     width: 19.25rem;
+    height: 44px;
+    border-radius: 50px;
+    border: none;   
+}
+
+.update-button::placeholder {
+    color: #A0A0A0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 13.18px;
 }
 
 .footer-section2 {
@@ -223,7 +233,12 @@ button {
         color: #FFFFFF;
         font-family: 'Be Vietnam Pro', sans-serif;
         line-height: 40px;
-    } 
+    }
+    
+    & ul li a:hover {
+        color:#8B48BF;
+    }
+    
 }
 
 
