@@ -233,18 +233,36 @@ button {
 /* Media queries */
 
 @media (min-width: 481px) {
+
+    main {
+        row-gap: 0;
+    }
+
+    section {
+        margin-bottom: 50px;
+    }
+
     .second-section {
         flex-direction: row;
         background-color: #8B48BF;
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-bottom: 0;
 
         & div {
             display: flex;
-            width: 1090px;
+
+            & h2 {
+                font-size: 2.25rem;
+            }
+
+            & p, h2 {
+                width: 450px;
+            }
         }
-    }
+        }
+   
 
     .icon-hamburger {
         display: none;
@@ -304,12 +322,23 @@ button {
         }
     }
 
+    .second-section-web  {
+        display: block !important;
+
+    }
+
+    .second-section-mobile {
+        display: none;
+    }
+
+
     /* Third section */
 
     .third-section {
         display: flex;
         background-color: #FAFAFA;
         height: 26.75rem;
+        padding: 3rem;
 
         & .third-section2 {
             align-self: end;
@@ -319,6 +348,9 @@ button {
 
     .container-title {
         background-color: #FAFAFA;
+        gap: 1rem !important;
     }
+
+
 
 }
