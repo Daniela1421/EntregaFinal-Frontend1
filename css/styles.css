@@ -86,6 +86,18 @@ button {
     }
 }
 
+@keyframes change-color {
+    0% {
+      background-color: #8B48BF4D;
+    }
+    50% {
+      background-color: #FF5733; /* Cambia el color a la mitad de la animación */
+    }
+    100% {
+      background-color: #8B48BF4D; /* Vuelve al color original al final */
+    }
+  }
+
 .container-title {
     display: flex;
     align-items: center;
@@ -93,6 +105,7 @@ button {
     background-color: #8B48BF4D;
     border-radius: 50px 0 0 50px;
     margin-bottom: 1.5rem;
+    animation: change-color 5s linear 0.5s infinite alternate;
 }
 
 .third-section3 p {
@@ -349,6 +362,7 @@ button {
     .container-title {
         background-color: #FAFAFA;
         gap: 1rem !important;
+
     }
 
 
