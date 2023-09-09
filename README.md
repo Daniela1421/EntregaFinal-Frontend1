@@ -1,6 +1,8 @@
 # EntregaFinal-Frontend1
 
-Este proyecto web ha sido desarrollado por Daniela Toro y Daniela Ducuara. Cada una ha contribuido con diferentes partes del sitio web y ha aplicado sus estilos correspondientes.
+Este proyecto web fue desarrollado por Daniela Toro y Daniela Ducuara. Cada una realizo diferentes partes del sitio web y ajustó sus estilos correspondientes.
+
+Primero creamos la estructura de carpetas juntas y acordamos la forma de trabajo. Decidimos que cada una se encargaría de una parte de la página, teniendo en cuenta realizar sus respectivos estilos y responsive.
 
 Daniela Toro
 ## Secciones Desarrolladas
