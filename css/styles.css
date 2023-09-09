@@ -1,5 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Roboto:wght@100&display=swap');     */
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Roboto:wght@100&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Roboto:wght@100&display=swap'); */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -101,33 +101,42 @@ button {
     display: block;
 }
 
-
-.fourth-section,
-.fifth-section {
+.fourth-section {
     display: flex;
-    flex-direction: column;
     flex-flow: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .best-month {
     color: #242E53;
     font-size: 39.21px;
+    margin-top: 2rem;
 }
 
-.info-lebron {
-    background-color: #FAFAFA;
+.container-best {
+    display: flex;
+    margin: 6rem 2rem 3rem;
+}
+
+.info-player {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 6rem 1.2188rem 2.8rem;
-    padding: 3rem 1.7188rem 1.7188rem;
     position: relative;
 }
 
-.img-lebron {
+.info-player-part2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0.7rem 1rem;
+    background-color: #FAFAFA;
+}
+
+.img-player {
     position: absolute;
-    top: -35px
+    top: -35px;
 }
 
 .info-name {
@@ -141,8 +150,8 @@ button {
     text-align: center;
 }
 
-.info-sanyo,
-.info-navarro {
+.sanyo,
+.navarro {
     display: none;
 }
 
@@ -152,19 +161,19 @@ button {
 }
 
 .fifth-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #3CDDF3;
-    padding: 2rem;
+    padding: 2rem 0; 
+    width: 100%;
 
     & h2 {
+        display: flex;
+        flex-direction: column;
         color: #FFFFFF;
         font-size: 40px;
-        /* font-weight: 700; */
-        padding: 1rem 3rem;
         text-align: center;
-
-        & .mobile-block {
-            display: block;
-        }
     }
 
 }
@@ -180,45 +189,49 @@ button {
 }
 
 .footer {
+    background-color: #1E1E26;
     display: flex;
-    align-items: center;
     flex-direction: column;
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
-.footer-buttons,
-.footer-nav,
-.footer-icons,
-.copyright {
-    background-color: #1E1E26;
-    padding: 1.5625rem 3.125rem;
-    /* width: 30.25rem; */
-}
-
 .footer-buttons {
     display: flex;
+    justify-content: center;
+    padding: 3rem 1rem 2rem;
 }
 
 .update-button {
     background-color: #FFFFFF;
     color: #A0A0A0;
-    margin-right: 0.3125rem;
+    margin-right: 0.5rem;
     padding-left: 0.625rem;
     text-align: start;
     width: 19.25rem;
 }
 
-.footer-nav {
-    color: #FFFFFF;
+.footer-section2 {
     display: flex;
     column-gap: 9.375rem;
     justify-content: center;
+    padding: 1rem 1rem 2rem;
+    & ul {
+        list-style: none;
+    }
+    & ul li a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        line-height: 40px;
+    } 
 }
+
 
 .footer-icons {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 1rem;
 }
 
 .social-networks {
@@ -234,6 +247,8 @@ button {
     color: #8C8C94;
     font-size: 12.5px;
     text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
 }
 
 /* Media queries */
@@ -327,41 +342,91 @@ button {
         background-color: #FAFAFA;
     }
 
-    .container-best {
-        display: flex;
-    }
+    /* Fourth section*/
 
-    
-    .info-sanyo,
-    .info-navarro, 
-    .info-lebron {
-        background-color: #FAFAFA;
+    .sanyo, 
+    .navarro {
         display: flex;
         align-items: center;
-        flex-direction: column;
-        margin: 0; 
-        padding: 3rem 1.7188rem 1rem;
-        /* position: relative; */
     }
 
-    .info-lebron {
-        background-color: red;
-    } 
-
-    .img-lebron {
-        position: absolute;
-        top: 0px
+    .more-button {
+        margin-bottom: 6rem;
+        background-color: rgba(139, 72, 191, 0.7);
     }
 
     .fifth-section {
         background-color: #8B48BF;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         width: 100%;
+        padding: 2rem 7rem; 
 
         & h2 {
-           width: 50rem; 
-           background-color: red;
+           display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+           padding: 1rem 0;
+           width: 33rem;
+
+           & .web-block {
+                padding: 0 0.5rem;
+           }
         }
     }
+
+    .go-button {
+        background-color: #FFFFFF;
+        color: #8B48BF;
+        margin-right: 3rem;
+    }
+
+    /* Footer */
+
+    .footer {
+        padding: 2rem 1.8rem;
+    }
+
+    .footer-section-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+        margin: 0 5rem;
+    }
+
+    .footer-icons {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        row-gap: 6rem;
+        padding: 0;
+
+        & .logo-footer {
+            padding: 0;
+        }
+    }
+
+    .footer-section2 {
+        padding: 0;
+    }
+
+    .social-networks {
+        gap: 0.5rem;
+    }
+
+    .footer-buttons {
+        padding: 0;
+
+        & .update-button {
+            width: 201px;
+        }
+    } 
+    
+    .copyright {
+        text-align: right;
+        padding: 0 5rem;
+    }
+
 }
