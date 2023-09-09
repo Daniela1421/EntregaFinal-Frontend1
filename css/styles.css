@@ -88,6 +88,18 @@ button {
     }
 }
 
+@keyframes change-color {
+    0% {
+      background-color: #8B48BF4D;
+    }
+    50% {
+      background-color: white;
+    }
+    100% {
+      background-color: #8B48BF4D;
+    }
+  }
+
 .container-title {
     display: flex;
     align-items: center;
@@ -95,6 +107,7 @@ button {
     background-color: #8B48BF4D;
     border-radius: 50px 0 0 50px;
     margin-bottom: 1.5rem;
+    animation: change-color 5s linear 0.5s infinite alternate;
 }
 
 .third-section3 p {
@@ -269,18 +282,36 @@ form {
 /* Media queries */
 
 @media (min-width: 481px) {
+
+    main {
+        row-gap: 0;
+    }
+
+    section {
+        margin-bottom: 50px;
+    }
+
     .second-section {
         flex-direction: row;
         background-color: #8B48BF;
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-bottom: 0;
 
         & div {
             display: flex;
-            width: 1090px;
+
+            & h2 {
+                font-size: 2.25rem;
+            }
+
+            & p, h2 {
+                width: 450px;
+            }
         }
-    }
+        }
+   
 
     .icon-hamburger {
         display: none;
@@ -340,12 +371,23 @@ form {
         }
     }
 
+    .second-section-web  {
+        display: block !important;
+
+    }
+
+    .second-section-mobile {
+        display: none;
+    }
+
+
     /* Third section */
 
     .third-section {
         display: flex;
         background-color: #FAFAFA;
         height: 26.75rem;
+        padding: 3rem;
 
         & .third-section2 {
             align-self: end;
@@ -355,6 +397,8 @@ form {
 
     .container-title {
         background-color: #FAFAFA;
+        gap: 1rem !important;
+
     }
 
     /* Fourth section*/
